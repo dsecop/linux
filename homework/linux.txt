@@ -15,6 +15,6 @@ darek     4226  0.0  0.0   8332  6568 pts/7    Ss+  16:06   0:00 /usr/bin/zsh -i
    44  mv copy.txt backup/
    45  ls
    46  cat processes.txt | wc -l > selected.txt
-   47  cat processes.txt | grep "/bin" >> selected.txt
+   47  grep "/bin" processes.txt >> selected.txt
    48  history
    49  history | tail -n12 > commands.txt
