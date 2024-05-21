@@ -8,6 +8,6 @@ cat selected.txt commands.txt
   296  mkdir backup
   297  mv copy.txt backup/
   298  wc -l processes.txt > selected.txt
-  299  cat processes.txt | grep -n "/bin" >> selected.txt
+  299  grep -n "/bin" processes.txt >> selected.txt
   300  history
   301  history | tail -n 11 > commands.txt
